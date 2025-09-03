@@ -155,7 +155,7 @@ export default function Footer() {
                     href="tel:+19375814542"
                     className="text-base text-black font-medium hover:text-[#2B7DA2]"
                   >
-                    +19375814542
+                    +1 937-581-4542
                   </a>
                 </div>
               </div>
