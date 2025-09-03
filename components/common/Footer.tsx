@@ -136,8 +136,8 @@ export default function Footer() {
                 <div className="flex items-start gap-3">
                   <MapPin className="mt-0.5 h-5 w-5 text-black" aria-hidden />
                   <p className="text-base text-black font-medium">
-                    6834 Loop Rd Dayton,
-                    <br /> OH 45459
+                    R Technologies LLC <br />
+                    31 Hibberd Dr, Dayton, OH 45458
                   </p>
                 </div>
                 <div className="flex items-center gap-3">
@@ -146,16 +146,16 @@ export default function Footer() {
                     href="mailto:nagayerrabothula@gmail.com"
                     className="text-base text-black font-medium hover:text-[#2B7DA2]"
                   >
-                    nagayerrabothula@gmail.com
+                    info@RTechOH.com
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
                   <Phone className="h-5 w-5 text-black" aria-hidden />
                   <a
-                    href="tel:+911234567890"
+                    href="tel:+19375814542"
                     className="text-base text-black font-medium hover:text-[#2B7DA2]"
                   >
-                    + 91 12345 67890
+                    +19375814542
                   </a>
                 </div>
               </div>
