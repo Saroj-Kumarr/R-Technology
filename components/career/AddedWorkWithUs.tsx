@@ -44,7 +44,7 @@ export default function WhyWorkWithUs() {
 
   return (
     <section aria-labelledby="why-work-with-us" className="md:py-16">
-      <div className="mx-auto max-w-6xl px-6 text-center">
+      <div className="mx-auto max-w-7xl px-6 text-center">
         <h2
           id="why-work-with-us"
           className="text-balance text-3xl md:text-4xl font-semibold"
@@ -69,7 +69,7 @@ export default function WhyWorkWithUs() {
                   aria-hidden="true"
                   className="inline-flex min-h-16 min-w-16 items-center justify-center rounded-full bg-[#2B7DA2] text-primary"
                 >
-                  <Icon className="h-8 w-8" />
+                  <Icon className="h-8 w-8 text-white" />
                 </span>
                 <div>
                   <h3 className="font-medium leading-6">{title}</h3>

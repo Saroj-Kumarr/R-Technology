@@ -12,23 +12,27 @@ const page = () => {
         title="Software Developer"
         responsibilities="Build applications with Java, Angular, Spring Boot, SQL."
         requirements="Bachelor’s/Master’s in CS/IT, strong problem-solving skills, flexibility to relocate if needed."
-        location="Bangalore"
+        location="Dayton Ohio"
         note="Apply Now →"
       />
       <JobDetailCard
         title="Project Manager"
         responsibilities="Lead delivery teams, manage timelines, stakeholder reporting."
         requirements="PMP or equivalent, strong communication, prior IT delivery experience."
-        location="Hyderabad"
+        location="Dayton Ohio"
         note="Apply Now →"
       />
       <JobDetailCard
         title="Programmer Analyst"
         responsibilities="Analyze user needs, develop systems, ensure performance."
         requirements="Bachelor’s/Master’s in CS/IT, programming experience, analytical mindset."
-        location="Noida" // Add an actual location if desired
+        location="Dayton Ohio"
         note="Apply Now →"
       />
+
+      <div className="mt-10 text-center font-semibold text-lg italic">
+        Submit your resume and grow your career with us.
+      </div>
     </div>
   );
 };

@@ -1,3 +1,5 @@
+import ServicesWithImageIcons from "@/components/Itstaff/BenifitSection";
+import BenefitsSection from "@/components/Itstaff/BenifitSection";
 import ItStaffAugmentationSection from "@/components/Itstaff/ItStaffAugumentation";
 import { ItStaffHero } from "@/components/Itstaff/ItStaffHero";
 import ItStaffCustomerSection from "@/components/Itstaff/StaffFeature";
@@ -10,7 +12,8 @@ const page = () => {
       <ItStaffHero />
       <ItStaffAugmentationSection />
       <ItStaffCustomerSection />
-      <TechnologyWeSupport />
+      {/* <TechnologyWeSupport /> */}
+      <ServicesWithImageIcons />
     </div>
   );
 };

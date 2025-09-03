@@ -12,6 +12,7 @@ import {
   FiCheckCircle,
   FiBookOpen,
 } from "react-icons/fi";
+import Link from "next/link";
 
 type ServiceItem = {
   title: string;
@@ -308,13 +309,13 @@ export default function ServicesSlider({
                   {item.description}
                 </p>
                 <div className="mt-6 flex justify-center">
-                  <a
-                    href="#"
+                  <Link
+                    href="/consulting/it-staff-augmentation"
                     className="rounded-md px-5 py-2 text-sm font-medium text-white hover:opacity-90"
                     style={{ backgroundColor: BRAND }}
                   >
                     Explore Solutions
-                  </a>
+                  </Link>
                 </div>
               </article>
             ))}

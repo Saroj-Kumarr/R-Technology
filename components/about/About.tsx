@@ -83,7 +83,7 @@ export function About() {
                   style={{ border: `10px solid ${BRAND}` }}
                 >
                   <div className="text-4xl md:text-5xl font-semibold text-slate-900">
-                    2+
+                    15+
                   </div>
                   <div className="mt-1 text-[11px] md:text-xs font-medium text-slate-700">
                     Year Experience

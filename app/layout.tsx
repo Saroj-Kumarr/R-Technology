@@ -23,8 +23,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "nsmsolllc",
-  description: "NSM Solutions LLC",
+  title: "Rtechnologies",
+  description: "Rtechnologies",
 };
 
 export default function RootLayout({

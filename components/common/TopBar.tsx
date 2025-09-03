@@ -18,7 +18,7 @@ type TopBarProps = {
 };
 
 export default function TopBar({
-  address = "6834 Loop Rd Dayton, OH 45459",
+  address = "R Tech Addresses.",
   email = "rtechnology@gmail.com",
   phone = "12345 67890",
   facebookUrl = "#",

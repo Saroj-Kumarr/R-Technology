@@ -50,7 +50,7 @@ export function Hero({
 
         <div className="mt-8 sm:mt-12 flex flex-col sm:flex-row w-full sm:w-auto items-stretch sm:items-center gap-3 sm:gap-6">
           <Button asChild className="h-11 w-full sm:w-48 md:w-52 font-normal">
-            <Link href={ctaHref} aria-label={ctaLabel}>
+            <Link href={"/contact"} aria-label={ctaLabel}>
               Schedule a Consultation
             </Link>
           </Button>
@@ -58,7 +58,10 @@ export function Hero({
             asChild
             className="h-11 w-full sm:w-48 md:w-52 font-normal bg-transparent border-2 border-white text-white hover:bg-white/10"
           >
-            <Link href={ctaHref} aria-label={ctaLabel}>
+            <Link
+              href={"consulting/it-staff-augmentation"}
+              aria-label={ctaLabel}
+            >
               Explore Services
             </Link>
           </Button>

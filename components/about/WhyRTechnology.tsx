@@ -1,5 +1,6 @@
 import type React from "react";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 // - Centered headline + subheading
 // - 3 cards with blue outlined circular icons, bold titles, body copy
@@ -118,8 +119,8 @@ export default function WhyRTechnology() {
         {/* Subtitle */}
         <p className="mx-auto mt-5 max-w-4xl text-center text-[#868686] leading-relaxed">
           Leading software development company. With over 15 years of market
-          experience. Present in 20 countries. Our development team drives
-          excellence, ensuring we deliver exactly what your business needs.
+          experience. Our development team drives excellence, ensuring we
+          deliver exactly what your business needs.
         </p>
 
         {/* Cards */}
@@ -165,12 +166,14 @@ export default function WhyRTechnology() {
 
         {/* CTA */}
         <div className="mt-10 md:mt-14 flex justify-center">
-          <Button
-            className="inline-flex items-center justify-center rounded-md py-5 w-40 text-white transition-colors"
-            style={{ backgroundColor: brand }}
-          >
-            Work With Us
-          </Button>
+          <Link href="/contact">
+            <Button
+              className="inline-flex items-center justify-center rounded-md py-5 w-40 text-white transition-colors"
+              style={{ backgroundColor: brand }}
+            >
+              Work With Us
+            </Button>
+          </Link>
         </div>
       </div>
     </section>

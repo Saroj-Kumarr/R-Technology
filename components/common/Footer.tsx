@@ -10,7 +10,15 @@ import {
   Facebook,
   Instagram,
   Linkedin,
+  ChevronDown,
 } from "lucide-react";
+
+import {
+  DropdownMenu,
+  DropdownMenuContent,
+  DropdownMenuItem,
+  DropdownMenuTrigger,
+} from "@/components/ui/dropdown-menu";
 
 export default function Footer() {
   return (
@@ -21,49 +29,108 @@ export default function Footer() {
           <div className="grid gap-10 md:grid-cols-3 md:gap-12">
             {/* Left column: Logo + copy */}
             <div className="space-y-5">
-              {/* If /logo.svg exists, show it; otherwise fall back to text */}
-              <div className="h-12 w-auto text-2xl  font-semibold">
-                🌐 R Technologies
-              </div>
-              <p className="text-base leading-relaxed text-black">
-                NSM Solutions focuses on delivering quality work with
-                maintaining a cordial relationship with its clients. Our
-                excellent record of innovative Staffing and Consulting solutions
-                make us reliable partners for all your IT needs
+              <Image
+                src="/logo2.png"
+                alt="Tech Solutions Logo"
+                width={100}
+                height={100}
+              />
+              <p className="text-sm leading-relaxed text-black">
+                R Technologies is dedicated to providing innovative IT
+                consulting and technology solutions while building lasting
+                relationships with our clients. Our proven expertise in
+                delivering reliable, customized services makes us a trusted
+                partner for all your IT and business needs.
               </p>
             </div>
-
             {/* Middle column: Quick Links */}
             <div className="space-y-5">
               <h3 className="text-2xl font-semibold text-black">Quick Links</h3>
               <ul className="space-y-4 font-medium">
-                {[
-                  { href: "/", label: "Home" },
-                  { href: "/about", label: "About Us" },
-                  {
-                    href: "/services/it-staff-augmentation",
-                    label: "Consulting Services",
-                  },
-                  { href: "/career", label: "Career" },
-                  { href: "/contact", label: "Contact Us" },
-                ].map((item) => (
-                  <li key={item.label} className="flex items-center gap-3">
-                    <ChevronRight className="h-5 w-5 text-black" aria-hidden />
-                    <Link
-                      href={item.href}
-                      className="text-base text-black transition-colors hover:text-[#2B7DA2]"
-                    >
-                      {item.label}
-                    </Link>
-                  </li>
-                ))}
+                <li className="flex items-center gap-3">
+                  <ChevronRight className="h-5 w-5 text-black" aria-hidden />
+                  <Link
+                    href="/"
+                    className="text-base text-black transition-colors hover:text-[#2B7DA2]"
+                  >
+                    Home
+                  </Link>
+                </li>
+                <li className="flex items-center gap-3">
+                  <ChevronRight className="h-5 w-5 text-black" aria-hidden />
+                  <Link
+                    href="/about"
+                    className="text-base text-black transition-colors hover:text-[#2B7DA2]"
+                  >
+                    About Us
+                  </Link>
+                </li>
+
+                {/* Services dropdown using shadcn/ui */}
+                <li>
+                  <DropdownMenu>
+                    <DropdownMenuTrigger asChild>
+                      <button className="flex items-center gap-1 text-base font-medium text-black hover:text-[#2B7DA2]">
+                        <ChevronRight
+                          className="h-5 w-5 text-black"
+                          aria-hidden
+                        />
+                        Services
+                        <ChevronDown className="h-4 w-4" aria-hidden />
+                      </button>
+                    </DropdownMenuTrigger>
+                    <DropdownMenuContent className="w-56 bg-white p-0 rounded-md shadow-md ring-1 ring-black ring-opacity-5">
+                      <DropdownMenuItem asChild>
+                        <Link
+                          href="/consulting/it-staff-augmentation"
+                          className="block w-full px-4 py-2 text-gray-800 hover:bg-[#D2EAF5] hover:text-[#2B7DA2]"
+                        >
+                          IT Staff Augmentation
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem asChild>
+                        <Link
+                          href="/consulting/master-vendor-program"
+                          className="block w-full px-4 py-2 text-gray-800 hover:bg-[#D2EAF5] hover:text-[#2B7DA2]"
+                        >
+                          Enterprise Engagement Solutions
+                        </Link>
+                      </DropdownMenuItem>
+                      <DropdownMenuItem asChild>
+                        <Link
+                          href="/consulting/talent-acquisition"
+                          className="block w-full px-4 py-2 text-gray-800 hover:bg-[#D2EAF5] hover:text-[#2B7DA2]"
+                        >
+                          Workforce Development Solutions
+                        </Link>
+                      </DropdownMenuItem>
+                    </DropdownMenuContent>
+                  </DropdownMenu>
+                </li>
+
+                <li className="flex items-center gap-3">
+                  <ChevronRight className="h-5 w-5 text-black" aria-hidden />
+                  <Link
+                    href="/career"
+                    className="text-base text-black transition-colors hover:text-[#2B7DA2]"
+                  >
+                    Career
+                  </Link>
+                </li>
+                <li className="flex items-center gap-3">
+                  <ChevronRight className="h-5 w-5 text-black" aria-hidden />
+                  <Link
+                    href="/contact"
+                    className="text-base text-black transition-colors hover:text-[#2B7DA2]"
+                  >
+                    Contact Us
+                  </Link>
+                </li>
               </ul>
             </div>
-
             {/* Right column: Connect */}
             <div className="space-y-5">
               <h3 className="text-2xl font-semibold text-black">Connect</h3>
-
               <div className="space-y-4">
                 <div className="flex items-start gap-3">
                   <MapPin className="mt-0.5 h-5 w-5 text-black" aria-hidden />
@@ -91,7 +158,6 @@ export default function Footer() {
                   </a>
                 </div>
               </div>
-
               <div className="mt-4 flex items-center gap-6">
                 <Link
                   aria-label="Facebook"
@@ -119,12 +185,11 @@ export default function Footer() {
           </div>
         </div>
       </div>
-
       {/* Bottom copyright bar */}
       <div className="w-full bg-[#2B7DA2]">
         <div className="mx-auto max-w-7xl px-6">
           <p className="py-4 text-center text-sm text-white">
-            Copyright © 2025 NSM Solutions LLC. All rights reserved.
+            Copyright R technologies LLC
           </p>
         </div>
       </div>

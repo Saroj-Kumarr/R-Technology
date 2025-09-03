@@ -11,6 +11,7 @@ import {
   DropdownMenuTrigger,
 } from "@/components/ui/dropdown-menu";
 import { useState } from "react";
+import Image from "next/image";
 
 type Props = {
   // Optional override so you can force an active item (used in the demo to match screenshot)
@@ -43,7 +44,12 @@ export function Header({ activePath }: Props) {
           aria-label="Go to homepage"
           className="flex items-center gap-2"
         >
-          <p className="font-semibold text-[28px]">🌐 R Technologies</p>
+          <Image
+            src="/logo2.png"
+            alt="Tech Solutions Logo"
+            width={90}
+            height={90}
+          />
         </Link>
 
         {/* Desktop navigation */}

@@ -1,6 +1,7 @@
 import Image from "next/image";
 import StatsStrip from "./StatsTrip";
 import { Button } from "../ui/button";
+import Link from "next/link";
 
 type ExperienceBannerProps = {
   title?: string;
@@ -48,7 +49,9 @@ export default function ExperienceBanner({
           </p>
 
           <div className="mt-6">
-            <Button>Contact Us Today</Button>
+            <Link href="/contact">
+              <Button>Contact Us Today</Button>
+            </Link>
           </div>
         </div>
       </div>

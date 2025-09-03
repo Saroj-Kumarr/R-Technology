@@ -21,12 +21,12 @@ const LIGHT_BLUE = "#E6F1F6";
 export default function ContactSection({
   heading = "Get in Touch",
   subheading = "Contact Details",
-  addressLabel = "Office Address",
-  address = "6834 Loop Rd Dayton, OH 45459",
+  addressLabel = "R Tech Addresses.",
+  address = "31 Hibberd Dr, Dayton, OH 45458",
   phoneLabel = "Phone Number",
-  phone = "+91 12345 67890",
+  phone = "+1 937-581-4542",
   emailLabel = "Email",
-  email = "rtechnology@gmail.com",
+  email = "info@RTechOH.com",
   linkedinLabel = "LinkedIn",
   linkedin = "https://www.linkedin.com",
 }: Props) {

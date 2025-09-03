@@ -1,3 +1,4 @@
+import Link from "next/link";
 import { Button } from "../ui/button";
 
 type JobDetailCardProps = {
@@ -87,7 +88,9 @@ export default function JobDetailCard({
           <span className="text-sm md:text-base font-semibold">{location}</span>
         </div>
 
-        <Button>{note}</Button>
+        <Link href="/contact">
+          <Button>{note}</Button>
+        </Link>
       </div>
     </section>
   );

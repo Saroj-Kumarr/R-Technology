@@ -1,5 +1,7 @@
 import Image from "next/image";
 import { MoveRight } from "lucide-react";
+import { Button } from "../ui/button";
+import Link from "next/link";
 
 export function VendorHero() {
   return (
@@ -35,6 +37,14 @@ export function VendorHero() {
           standardize processes, and improve accountability across all IT
           services.
         </p>
+
+        <div className="mt-8 sm:mt-12 flex flex-col sm:flex-row w-full sm:w-auto items-stretch sm:items-center gap-3 sm:gap-6">
+          <Button asChild className="h-11 w-full sm:w-48 md:w-56 font-normal">
+            <Link href={"/consulting/it-staff-augmentation"}>
+              Explore Workforce Programs
+            </Link>
+          </Button>
+        </div>
       </div>
 
       {/* Slider dots */}
