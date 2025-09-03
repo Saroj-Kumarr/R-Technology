@@ -1,6 +1,6 @@
 "use client";
-
-import type * as React from "react";
+import React, { useRef } from "react";
+import emailjs from "@emailjs/browser";
 
 type Props = {
   heading?: string;
@@ -26,13 +26,32 @@ export default function ContactSection({
   phoneLabel = "Phone Number",
   phone = "+1 937-581-4542",
   emailLabel = "Email",
-  email = "info@RTechOH.com",
+  email = "skstriver@gmail.com",
   linkedinLabel = "LinkedIn",
   linkedin = "https://www.linkedin.com",
 }: Props) {
+  const form = useRef<HTMLFormElement>(null);
+
   function onSubmit(e: React.FormEvent<HTMLFormElement>) {
     e.preventDefault();
-    alert("Message submitted. (Demo)");
+    if (!form.current) return;
+
+    emailjs
+      .sendForm(
+        "service_ytpf3qi", // replace with your EmailJS Service ID
+        "template_5g48vcb", // replace with your EmailJS Template ID
+        form.current,
+        "QAqEeEe8GN4o8xLlu" // replace with your EmailJS Public Key
+      )
+      .then(
+        () => {
+          alert("Message submitted successfully!");
+          if (form.current) form.current.reset();
+        },
+        () => {
+          alert("Failed to send message, please try again.");
+        }
+      );
   }
 
   return (
@@ -50,7 +69,7 @@ export default function ContactSection({
 
       {/* Two-column layout */}
       <div className="mx-auto mt-10 grid max-w-5xl gap-10 md:mt-12 md:grid-cols-2 md:gap-12">
-        {/* Left: contact details (side panel) with relatable icons */}
+        {/* Left: contact details */}
         <div className="flex flex-col justify-center rounded-md border p-6 md:p-8">
           <ul className="space-y-5">
             <li className="flex items-start gap-3">
@@ -66,7 +85,6 @@ export default function ContactSection({
                 <p className="text-base">{address}</p>
               </div>
             </li>
-
             <li className="flex items-start gap-3">
               <PhoneIcon
                 className="mt-0.5 h-6 w-6"
@@ -82,7 +100,6 @@ export default function ContactSection({
                 </a>
               </div>
             </li>
-
             <li className="flex items-start gap-3">
               <MailIcon
                 className="mt-0.5 h-6 w-6"
@@ -101,33 +118,12 @@ export default function ContactSection({
                 </a>
               </div>
             </li>
-
-            <li className="flex items-start gap-3">
-              <LinkedInIcon
-                className="mt-0.5 h-6 w-6"
-                style={{ color: BLUE }}
-                aria-hidden="true"
-              />
-              <div>
-                <p className="text-sm font-medium" style={{ color: BLUE }}>
-                  {linkedinLabel}
-                </p>
-                <a
-                  href={linkedin}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="text-base hover:underline"
-                >
-                  {linkedin.replace(/^https?:\/\//, "")}
-                </a>
-              </div>
-            </li>
           </ul>
         </div>
 
-        {/* Right: contact form with ALL requested fields */}
+        {/* Right: contact form */}
         <div>
-          <form onSubmit={onSubmit} className="space-y-4">
+          <form ref={form} onSubmit={onSubmit} className="space-y-4">
             {/* Name */}
             <label htmlFor="name" className="sr-only">
               Name
@@ -194,7 +190,6 @@ export default function ContactSection({
               <option value="" disabled>
                 Service Interested In
               </option>
-
               <option value="devops">DevOps</option>
               <option value="cloud">Cloud (AWS / Azure)</option>
               <option value="consulting">Consulting</option>
@@ -251,13 +246,6 @@ function MailIcon(props: React.SVGProps<SVGSVGElement>) {
   return (
     <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
       <path d="M2 5a3 3 0 0 1 3-3h14a3 3 0 0 1 3 3v14a3 3 0 0 1-3 3H5a3 3 0 0 1-3-3V5Zm3 0 7 5 7-5H5Zm14 14V8.24l-7 5-7-5V19h14Z" />
-    </svg>
-  );
-}
-function LinkedInIcon(props: React.SVGProps<SVGSVGElement>) {
-  return (
-    <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" {...props}>
-      <path d="M4.98 3.5C3.88 3.5 3 4.38 3 5.48c0 1.09.88 1.98 1.98 1.98a1.98 1.98 0 1 0 0-3.96ZM3.5 8.75h3v11.75h-3V8.75Zm6 0h2.88v1.6h.04c.4-.76 1.37-1.56 2.82-1.56 3.02 0 3.57 1.99 3.57 4.57v7.14h-3V14.1c0-1.35-.03-3.08-1.88-3.08-1.88 0-2.17 1.47-2.17 2.99v6.49h-3V8.75Z" />
     </svg>
   );
 }

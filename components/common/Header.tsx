@@ -49,6 +49,7 @@ export function Header({ activePath }: Props) {
             alt="Tech Solutions Logo"
             width={90}
             height={90}
+            className="h-[70px] w-[70px] md:h-[90px] md:w-[90px]"
           />
         </Link>
 
