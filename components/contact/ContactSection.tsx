@@ -26,7 +26,7 @@ export default function ContactSection({
   phoneLabel = "Phone Number",
   phone = "+1 937-581-4542",
   emailLabel = "Email",
-  email = "skstriver@gmail.com",
+  email = "info@RTechOH.com",
   linkedinLabel = "LinkedIn",
   linkedin = "https://www.linkedin.com",
 }: Props) {
@@ -176,25 +176,17 @@ export default function ContactSection({
               style={{ backgroundColor: LIGHT_BLUE, borderColor: BLUE }}
             />
 
-            {/* Service Interested In (dropdown) */}
             <label htmlFor="service" className="sr-only">
               Service Interested In
             </label>
-            <select
+            <input
+              type="text"
               id="service"
               name="service"
+              placeholder="Service Interested In"
               className="w-full rounded-md border p-3 text-base outline-none"
               style={{ backgroundColor: LIGHT_BLUE, borderColor: BLUE }}
-              defaultValue=""
-            >
-              <option value="" disabled>
-                Service Interested In
-              </option>
-              <option value="devops">DevOps</option>
-              <option value="cloud">Cloud (AWS / Azure)</option>
-              <option value="consulting">Consulting</option>
-              <option value="other">Other</option>
-            </select>
+            />
 
             {/* Message */}
             <label htmlFor="message" className="sr-only">

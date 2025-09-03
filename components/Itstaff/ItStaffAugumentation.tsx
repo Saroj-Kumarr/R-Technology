@@ -7,7 +7,7 @@ export default function ItStaffAugmentationSection() {
       <div className="grid px-5 md:px-20 lg:px-24 items-center gap-8 md:grid-cols-2">
         {/* Text column */}
         <div>
-          <p className="font-medium">IT STAFF AUGMENTATION</p>
+          <p className="font-medium">Solutions</p>
 
           <h2
             id="it-staff-augmentation-heading"
@@ -25,13 +25,12 @@ export default function ItStaffAugmentationSection() {
               challenging and absolutely imperative.
             </p>
             <p className="leading-relaxed">
-              NSM Solution’s Staff Augmentation services gives your organization
-              access to the myriad of IT skills that match your business
-              requirements. It is a simplified and quickest way to gain control
-              over your technical staff while sizing up without the hassle of
-              maintaining good resources in-house. Our skilled application
-              professionals can develop and maintain all applications according
-              to your workflow while meeting aggressive project timelines.
+              At R Technologies, our solutions cover the full technology
+              lifecycle—from strategic consulting to development, cloud,
+              analytics, QA, and training. Explore our offerings. Our skilled
+              application professionals can develop and maintain all
+              applications according to your workflow while meeting aggressive
+              project timelines.
             </p>
           </div>
         </div>

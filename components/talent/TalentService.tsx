@@ -7,7 +7,7 @@ export default function TalentService() {
       <div className="grid px-5 md:px-20 lg:px-24 items-center gap-8 md:grid-cols-2">
         {/* Text column */}
         <div>
-          <p className="font-medium">TALENT ACQUISITION SERVICES</p>
+          {/* <p className="font-medium">TALENT ACQUISITION SERVICES</p> */}
 
           <h2
             id="talent-acquisition-services-heading"
@@ -18,13 +18,22 @@ export default function TalentService() {
 
           <div className="mt-5 space-y-4 text-[#868686]">
             <p className="leading-relaxed">
-              Keeping up with the pace of digital transformation requires more
-              than just hiring—it requires continuously developing people. Our
-              Workforce Development Solutions focus on strengthening IT
-              capabilities within your organization by combining training,
-              mentorship, and hands-on project experience. We work closely with
-              you to understand your goals and design programs that ensure your
-              teams are equipped with the right skills to thrive.
+              In today&apos;s fast-changing digital world, success depends on
+              more than hiring—it requires empowering and continuously
+              developing people. At R Technologies, our Workforce Development
+              Solutions are designed to strengthen your IT capabilities by
+              combining expert training, mentorship, and real-world project
+              experience.
+            </p>
+            <p className="leading-relaxed mt-5">
+              <p className="leading-relaxed">
+                We partner closely with you to understand your business
+                objectives and create customized programs that prepare your
+                teams with the latest skills, tools, and practices. Whether it’s
+                upskilling existing staff or building new capabilities, we
+                ensure your workforce is equipped to drive innovation,
+                efficiency, and growth.
+              </p>
             </p>
           </div>
         </div>

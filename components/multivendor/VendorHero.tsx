@@ -40,7 +40,7 @@ export function VendorHero() {
 
         <div className="mt-8 sm:mt-12 flex flex-col sm:flex-row w-full sm:w-auto items-stretch sm:items-center gap-3 sm:gap-6">
           <Button asChild className="h-11 w-full sm:w-48 md:w-56 font-normal">
-            <Link href={"/consulting/it-staff-augmentation"}>
+            <Link href={"/consulting/solutions"}>
               Explore Workforce Programs
             </Link>
           </Button>

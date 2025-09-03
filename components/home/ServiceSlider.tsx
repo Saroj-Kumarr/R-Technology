@@ -310,7 +310,7 @@ export default function ServicesSlider({
                 </p>
                 <div className="mt-6 flex justify-center">
                   <Link
-                    href="/consulting/it-staff-augmentation"
+                    href="/consulting/solutions"
                     className="rounded-md px-5 py-2 text-sm font-medium text-white hover:opacity-90"
                     style={{ backgroundColor: BRAND }}
                   >

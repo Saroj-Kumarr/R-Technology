@@ -58,10 +58,7 @@ export function Hero({
             asChild
             className="h-11 w-full sm:w-48 md:w-52 font-normal bg-transparent border-2 border-white text-white hover:bg-white/10"
           >
-            <Link
-              href={"consulting/it-staff-augmentation"}
-              aria-label={ctaLabel}
-            >
+            <Link href={"consulting/solutions"} aria-label={ctaLabel}>
               Explore Services
             </Link>
           </Button>

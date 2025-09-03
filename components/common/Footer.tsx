@@ -82,10 +82,10 @@ export default function Footer() {
                     <DropdownMenuContent className="w-56 bg-white p-0 rounded-md shadow-md ring-1 ring-black ring-opacity-5">
                       <DropdownMenuItem asChild>
                         <Link
-                          href="/consulting/it-staff-augmentation"
+                          href="/consulting/solutions"
                           className="block w-full px-4 py-2 text-gray-800 hover:bg-[#D2EAF5] hover:text-[#2B7DA2]"
                         >
-                          IT Staff Augmentation
+                          Solutions
                         </Link>
                       </DropdownMenuItem>
                       <DropdownMenuItem asChild>
@@ -142,10 +142,10 @@ export default function Footer() {
                 <div className="flex items-center gap-3">
                   <Mail className="h-5 w-5 text-black" aria-hidden />
                   <a
-                    href="mailto:rtechnology@gmail.com"
+                    href="mailto:nagayerrabothula@gmail.com"
                     className="text-base text-black font-medium hover:text-[#2B7DA2]"
                   >
-                    rtechnology@gmail.com
+                    nagayerrabothula@gmail.com
                   </a>
                 </div>
                 <div className="flex items-center gap-3">
@@ -189,7 +189,8 @@ export default function Footer() {
       <div className="w-full bg-[#2B7DA2]">
         <div className="mx-auto max-w-7xl px-6">
           <p className="py-4 text-center text-sm text-white">
-            Copyright R technologies LLC
+            Copyright © {new Date().getFullYear()} R Technologies LLC. All
+            rights reserved.
           </p>
         </div>
       </div>

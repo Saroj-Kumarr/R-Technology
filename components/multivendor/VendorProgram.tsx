@@ -7,7 +7,7 @@ export default function VendorProgram() {
       <div className="grid px-5 md:px-20 lg:px-24 items-center gap-8 md:grid-cols-2">
         {/* Text column */}
         <div>
-          <p className="font-medium">Master Vendor Program</p>
+          {/* <p className="font-medium">Master Vendor Program</p> */}
 
           <h2
             id="it-staff-augmentation-heading"

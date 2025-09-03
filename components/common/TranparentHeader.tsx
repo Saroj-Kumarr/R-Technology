@@ -90,7 +90,7 @@ export function TransparentHeader({ activePath }: Props) {
               className="min-w-64"
             >
               <DropdownMenuItem asChild>
-                <Link href="/consulting/it-staff-augmentation">Solutions</Link>
+                <Link href="/consulting/solutions">Solutions</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 <Link href="/consulting/master-vendor-program">
@@ -180,7 +180,7 @@ export function TransparentHeader({ activePath }: Props) {
             {mobileServicesOpen && (
               <div id="mobile-services" className="flex flex-col gap-1 pl-3">
                 <Link
-                  href="/consulting/it-staff-augmentation"
+                  href="/consulting/solutions"
                   className="rounded px-3 py-2 text-sm hover:bg-white/10"
                 >
                   Solutions

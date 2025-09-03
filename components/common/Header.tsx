@@ -82,7 +82,7 @@ export function Header({ activePath }: Props) {
               className="min-w-64"
             >
               <DropdownMenuItem asChild>
-                <Link href="/consulting/it-staff-augmentation">Solutions</Link>
+                <Link href="/consulting/solutions">Solutions</Link>
               </DropdownMenuItem>
               <DropdownMenuItem asChild>
                 <Link href="/consulting/master-vendor-program">
@@ -177,7 +177,7 @@ export function Header({ activePath }: Props) {
             >
               <DropdownMenuItem asChild>
                 <Link
-                  href="/consulting/it-staff-augmentation"
+                  href="/consulting/solutions"
                   onClick={() => setMobileMenuOpen(false)}
                 >
                   Solutions

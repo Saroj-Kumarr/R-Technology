@@ -45,7 +45,7 @@ export function AboutHero({
           About R Technologies
         </h1>
 
-        <p className="mt-4 sm:mt-5 max-w-3xl text-pretty text-sm sm:text-base md:text-lg leading-relaxed text-white/90">
+        <p className="mt-4 sm:mt-5 max-w-3xl text-pretty text-sm sm:text-base md:text-[24px] leading-relaxed text-white/90">
           Your trusted partner for software development and IT services.
         </p>
       </div>
