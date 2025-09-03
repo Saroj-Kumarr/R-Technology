@@ -30,8 +30,9 @@ export default function Footer() {
             {/* Left column: Logo + copy */}
             <div className="space-y-5">
               <Image
-                src="/logo2.png"
+                src="/logo.svg"
                 alt="Tech Solutions Logo"
+                className="cs rounded-2xl"
                 width={100}
                 height={100}
               />
@@ -161,21 +162,21 @@ export default function Footer() {
               <div className="mt-4 flex items-center gap-6">
                 <Link
                   aria-label="Facebook"
-                  href="#"
+                  href="https://www.facebook.com/RTechOH"
                   className="text-black transition-colors hover:text-[#2B7DA2]"
                 >
                   <Facebook className="h-6 w-6" />
                 </Link>
                 <Link
                   aria-label="Instagram"
-                  href="#"
+                  href="https://www.instagram.com/rtechoh"
                   className="text-black transition-colors hover:text-[#2B7DA2]"
                 >
                   <Instagram className="h-6 w-6" />
                 </Link>
                 <Link
                   aria-label="LinkedIn"
-                  href="#"
+                  href="https://www.linkedin.com/company/rtechoh"
                   className="text-black transition-colors hover:text-[#2B7DA2]"
                 >
                   <Linkedin className="h-6 w-6" />

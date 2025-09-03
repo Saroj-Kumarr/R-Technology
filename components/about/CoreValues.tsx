@@ -93,10 +93,10 @@ export default function CoreValues() {
 
         {/* Intro */}
         <p className="mx-auto mt-3 max-w-3xl text-center text-sm sm:text-base leading-relaxed text-slate-700">
-          Core values form the integral part of NSM Solution&apos;s daily
-          endeavors and reflects well in the delivering of service to our
-          clients. We constantly reinforce and continually align our
-          organization around these fundamental principles.
+          Core values form the integral part of R Technologies daily endeavors
+          and reflects well in the delivering of service to our clients. We
+          constantly reinforce and continually align our organization around
+          these fundamental principles.
         </p>
 
         {/* Card with navigation */}

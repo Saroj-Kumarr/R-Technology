@@ -13,7 +13,7 @@ type ExperienceBannerProps = {
 
 export default function ExperienceBanner({
   title = "Experience and innovation in a single touch.",
-  subtitle = "NSM Solutions has structured itself strategically to provide some of the most cutting-edge solutions for its clients.",
+  subtitle = "R technologies has structured itself strategically to provide some of the most cutting-edge solutions for its clients.",
   ctaText = "Get In Touch",
   ctaHref = "#contact",
   heightClassName = "min-h-[90vh]",

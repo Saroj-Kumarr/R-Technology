@@ -22,7 +22,7 @@ export function ItStaffCustomerSection() {
           id="nsm-features-title"
           className="my-5 text-balance text-center text-3xl font-semibold md:text-4xl"
         >
-          Why NSM Solutions?
+          Why R technologies?
         </h2>
 
         <div className="mt-8 grid items-center gap-10 md:grid-cols-2">
