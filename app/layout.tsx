@@ -23,8 +23,8 @@ const poppins = Poppins({
 });
 
 export const metadata: Metadata = {
-  title: "Rtechnologies",
-  description: "Rtechnologies",
+  title: "R Tech",
+  description: "R Tech - Your Gateway to Tech Solutions",
 };
 
 export default function RootLayout({

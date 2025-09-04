@@ -37,7 +37,7 @@ export function Header({ activePath }: Props) {
       className={cn("fixed z-50 w-full bg-[#2B7DA2] text-white")}
       aria-label="Site header"
     >
-      <div className="flex h-20 items-center justify-between px-5 md:px-20 lg:px-24">
+      <div className="flex h-[70px] md:h-20 items-center justify-between px-5 md:px-20 lg:px-24">
         {/* Logo area */}
         <Link
           href="/"

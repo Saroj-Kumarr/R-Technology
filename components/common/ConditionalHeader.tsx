@@ -21,7 +21,7 @@ const ConditionalHeader = () => {
   }, []);
 
   return (
-    <div className="mb-[78px]">
+    <div className="mb-[70px] md:mb-[78px]">
       {/* {isScrollDown ? ( */}
       <Header />
       {/* ) : (
