@@ -76,8 +76,11 @@ export default function Footer() {
                           className="h-5 w-5 text-black"
                           aria-hidden
                         />
-                        Services
-                        <ChevronDown className="h-4 w-4" aria-hidden />
+                        <span className="ml-[7px]"> Services</span>
+                        <ChevronDown
+                          className="h-4 w-4 relative top-[1px]"
+                          aria-hidden
+                        />
                       </button>
                     </DropdownMenuTrigger>
                     <DropdownMenuContent className="w-56 bg-white p-0 rounded-md shadow-md ring-1 ring-black ring-opacity-5">

@@ -26,7 +26,7 @@ export default function ContactSection({
   phoneLabel = "Phone Number",
   phone = "+1 937-581-4542",
   emailLabel = "Email",
-  email = "info@RTechOH.com",
+  email = "info@rtechoh.com",
   linkedinLabel = "LinkedIn",
   linkedin = "https://www.linkedin.com",
 }: Props) {
@@ -36,22 +36,26 @@ export default function ContactSection({
     e.preventDefault();
     if (!form.current) return;
 
-    emailjs
-      .sendForm(
-        "service_ytpf3qi", // replace with your EmailJS Service ID
-        "template_5g48vcb", // replace with your EmailJS Template ID
-        form.current,
-        "QAqEeEe8GN4o8xLlu" // replace with your EmailJS Public Key
-      )
-      .then(
-        () => {
-          alert("Message submitted successfully!");
-          if (form.current) form.current.reset();
-        },
-        () => {
-          alert("Failed to send message, please try again.");
-        }
-      );
+    const serviceId = process.env.NEXT_PUBLIC_EMAILJS_SERVICE_ID;
+    const templateId = process.env.NEXT_PUBLIC_EMAILJS_TEMPLATE_ID;
+    const publicKey = process.env.NEXT_PUBLIC_EMAILJS_PUBLIC_KEY;
+
+    console.log({ serviceId, templateId, publicKey });
+
+    if (!serviceId || !templateId || !publicKey) {
+      alert("EmailJS configuration is missing. Please contact support.");
+      return;
+    }
+
+    emailjs.sendForm(serviceId, templateId, form.current, publicKey).then(
+      () => {
+        alert("Thanks for submitting the form ");
+        if (form.current) form.current.reset();
+      },
+      () => {
+        alert("Failed to send message, please try again.");
+      }
+    );
   }
 
   return (
